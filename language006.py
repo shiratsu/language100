@@ -21,6 +21,16 @@ def ngram2(input, n):
 X = ngram2(input1,2)
 Y = ngram2(input2,2)
 
+# 和集合
+# setは重複を排除する
 print(set(X).union(set(Y)))
+
+# 差集合
 print(set(X).difference(set(Y)))
+
+# 積集合
 print(set(X).intersection(set(Y)))
+
+Z = set(X).union(set(Y))
+
+print("se" in Z)
