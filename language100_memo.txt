@@ -1,0 +1,19 @@
+言語処理100本ノック
+
+taskIdを使って、ソートする
+
+>>> print sorted(tasks, key=lambda x:x['TaskId'])
+[{'TaskId': 0, 'TaskTitle': 'Fishing'},
+ {'TaskId': 1, 'TaskTitle': 'Cycling'},
+ {'TaskId': 2, 'TaskTitle': 'Running'}]
+
+ N-gramを使った検索エンジンでは，単純に文字の並びを見出し語としてインデックスを作成します。1文字を元にインデックスを作成する方法をユニグラム，2文字の並びを元にインデックスを作成する方法をバイグラム，3文字の並びを元にインデックスを作成する方法をトリグラムと呼んでいます。
+
+1文字：ユニグラム
+2文字：バイグラム
+3文字：トリグラム
+
+http://gihyo.jp/dev/serial/01/make-findspot/0005
+
+単語bi-gramは、単語ごと２文字ではなく、２単語
+文字bi-gramは文字ごとなので、スペースも対象
