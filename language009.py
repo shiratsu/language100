@@ -2,15 +2,6 @@
 # -*- coding: utf-8 -*-
 import random
 
-input = "I couldn't believe that I could actually understand what I was reading : the phenomenal power of the human mind ."
-
-input = input.replace(":","")
-input = input.replace(".","")
-
-list = []
-
-someHandleWord(input)
-
 def someHandleWord(strWord):
     print(strWord)
 
@@ -29,3 +20,12 @@ def someHandleWord(strWord):
             list.append(addStr)
 
     print(list)
+
+input = "I couldn't believe that I could actually understand what I was reading : the phenomenal power of the human mind ."
+
+input = input.replace(":","")
+input = input.replace(".","")
+
+list = []
+
+someHandleWord(input)
