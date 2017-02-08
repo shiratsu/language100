@@ -210,3 +210,15 @@ $ cut -f1 hightemp.txt | sort | uniq -c | sort -nr                              
    1 愛媛県
    1 大阪府
 ```
+
+```
+$ grep '"text": ".*イギリス.*title[^イギリス]*' jawiki-country.json | wc -l                                                                    2.3.1
+     150     
+```
+
+```
+~/language100_another ⌚ 13:46:03
+$ grep 'title=.*イギリス.*' jawiki-country.json | wc -l                                                                                        2.3.1
+      95
+
+```
