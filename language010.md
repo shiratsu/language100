@@ -222,3 +222,7 @@ $ grep 'title=.*イギリス.*' jawiki-country.json | wc -l                     
       95
 
 ```
+
+```
+grep 'title=.*イギリス.*' jawiki-country.json | grep Category
+```
