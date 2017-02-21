@@ -15,3 +15,14 @@ def extract_from_json(title):
             else:
                 json_data = f.readline()
     return ""
+
+def openFile():
+    with open("../language100_another/jawiki-country.json") as f:
+        json_data = f.readline()
+        while json_data:
+            article_dict = json.loads(json_data)
+            if article_dict["title"] == title:
+                return article_dict["text"]
+            else:
+                json_data = f.readline()
+    return ""
