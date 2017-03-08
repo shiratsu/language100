@@ -1,7 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-# 25.py
-
 import re
 from mymodule import extract_from_json
 

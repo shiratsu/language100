@@ -1,7 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-# 25.py
-
 import re
 from mymodule import extract_from_json
 
@@ -13,7 +9,7 @@ kisoFlag = False
 dict = {}
 
 for line in lines:
-
+    # print(line)
     if line == '{{基礎情報 国':
         print("true")
         kisoFlag = True
