@@ -20,3 +20,16 @@ http://gihyo.jp/dev/serial/01/make-findspot/0005
 
 シェルの確認用
 https://hydrocul.github.io/wiki/commands/cut.html
+
+
+<#T##(() -> Void)?##(() -> Void)?##() -> Void#>
+
+http://shotcu.devoneidv.info:8987/api-front/app/cunavilist?access_token=$1$dvQC8QnF$GLvvCNGy983wqTjWAfUha1b0bb0d1dd9ebc730401657df83752da1ee30e3d86455a4a3f568748d200c231313d87f09cb09f34ae27b69b81b0cf16f66330d7583cc225de02998403de467364e229ebd6b70700ca93e83aa6cf0b58bd86868685cd96dfd82e70efa676768833c1b05c80126cbb540b4fae0aa3f5
+
+url_str	String	"http://shotcu.devoneidv.info:8987/api-front/app/cunavilist"
+param_str	String	"access_token=$1$dvQC8QnF$GLvvCNGy983wqTjWAfUha1b0bb0d1dd9ebc730401657df83752da1ee30e3d86455a4a3f568748d200c231313d87f09cb09f34ae27b69b81b0cf16f66330d7583cc225de02998403de467364e229ebd6b70700ca93e83aa6cf0b58bd86868685cd96dfd82e70efa676768833c1b05c80126cbb540b4fae0aa3f5"
+
+url_str	String	"http://shotcu.devoneidv.info:8987/api-front/app/cunavilist"
+param_str	String	"access_token=$1$bz0njg8E$MQYEZLeTmHkXvjdPEC/q6.066ebb7a7f54821021b798487b14ca636feb5aaf817759e379249347e579b87e1df2c6cf29acc9b1a64db27b3699d9a83ebb46d2dac48bbad46f39a1bd5af22b8b98075fba74d73e48579885e68bc56cd76e2e1c13cf3d43a1199ad8e212e24cc492db776cf5b4083db7b7aeee27d"
+
+http://shotcu.devoneidv.info:8987/api-front/app/cunavilist?access_token=$1$bz0njg8E$MQYEZLeTmHkXvjdPEC/q6.066ebb7a7f54821021b798487b14ca636feb5aaf817759e379249347e579b87e1df2c6cf29acc9b1a64db27b3699d9a83ebb46d2dac48bbad46f39a1bd5af22b8b98075fba74d73e48579885e68bc56cd76e2e1c13cf3d43a1199ad8e212e24cc492db776cf5b4083db7b7aeee27d
