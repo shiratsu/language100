@@ -14,10 +14,19 @@ aryInfo = []
 i = 0
 for line in open('neko.txt', 'r'):
 
-    analyzetext = mecab.parse(line)
-    # print(analyzetext)
-    aryNode = re.split("[\t,]",analyzetext)
+    res = mecab.parseToNode(line)
     # print(aryNode)
-    if len(aryNode) > 2:
-        if aryNode[1] == '名詞' and aryNode[2] == 'サ変接続':
-            print(aryNode[0])
+    # print(res)
+    while res:
+        #単語を取得
+        word = res.surface
+        #品詞を取得
+        pos = res.feature.split(",")[1]
+        pos2 = res.feature.split(",")[2]
+        if pos == '名詞' and pos2 == 'サ変接続':
+            print(word)
+        res = res.next
+
+    # if len(aryNode) > 2:
+    #     if aryNode[1] == '名詞' and aryNode[2] == 'サ変接続':
+    #         print(aryNode[0])

@@ -6,18 +6,28 @@ import re
 import pprint
 
 # めかぶと辞書配列の定義
-mecab = MeCab.Tagger('mecabrc')
+mecab = MeCab.Tagger ('-d /usr/local/lib/mecab/dic/mecab-ipadic-neologd')
+mecab.parse('')#文字列がGCされるのを防ぐ
 
 aryInfo = []
 
 i = 0
 for line in open('neko.txt', 'r'):
 
-    analyzetext = mecab.parse(line)
-    # print(analyzetext)
-    aryNode = re.split("[\t,]",analyzetext)
-    # print(aryNode)
-    # print(aryNode[0])
-    if len(aryNode) > 2:
-        if aryNode[1] == '動詞':
-            print(aryNode[7])
+    res = mecab.parseToNode(line)
+    while res:
+        #単語を取得
+        word = res.surface
+        #品詞を取得
+        aryRes = res.feature.split(",")
+        # print(aryRes)
+        if len(aryRes) > 7:
+            #品詞を取得
+            pos = aryRes[1]
+            viewWord = aryRes[7]
+            if pos == '動詞':
+                print(viewWord)
+        res = res.next
+    # if len(aryNode) > 2:
+    #     if aryNode[1] == '動詞':
+    #         print(aryNode[7])
