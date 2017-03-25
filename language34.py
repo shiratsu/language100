@@ -17,9 +17,7 @@ isJoshi = False
 
 i = 0
 for line in open('neko.txt', 'r'):
-    if i == 100:
-        break
-    i += 1
+
     # analyzetext = mecab.parse(line)
     # print(analyzetext)
     # print(line)
@@ -85,5 +83,5 @@ for line in open('neko.txt', 'r'):
     #     elif prevWord != '' and isMaking == True and aryNode[1] != '名詞' and aryNode[1] != '助詞':
     #         prevWord = ''
     #         isMaking = False
-
-print(str(aryInfo).decode("string-escape"))
+print(aryInfo)
+# print(str(aryInfo).decode("string-escape"))
