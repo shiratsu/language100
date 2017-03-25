@@ -20,9 +20,9 @@ for line in open('neko.txt', 'r'):
         word = res.surface
         aryRes = res.feature.split(",")
         # print(aryRes)
-        if len(aryRes) > 7:
+        if len(aryRes) > 6:
             #品詞を取得
-            pos = aryRes[1]
+            pos = aryRes[0]
             if pos == '動詞':
                 print(word)
             res = res.next

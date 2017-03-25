@@ -28,11 +28,11 @@ for line in open('neko.txt', 'r'):
         #     print(len(res.feature))
         aryRes = res.feature.split(",")
         # print(aryRes)
-        if len(aryRes) > 7:
+        if len(aryRes) > 6:
             dicWord['surface'] = word
-            dicWord['base'] = aryRes[7]
-            dicWord['pos'] = aryRes[1]
-            dicWord['pos1'] = aryRes[2]
+            dicWord['base'] = aryRes[6]
+            dicWord['pos'] = aryRes[0]
+            dicWord['pos1'] = aryRes[1]
             aryInfo.append(dicWord)
         res = res.next
 

@@ -23,8 +23,8 @@ for line in open('neko.txt', 'r'):
         # print(aryRes)
         if len(aryRes) > 7:
             #品詞を取得
-            pos = aryRes[1]
-            viewWord = aryRes[7]
+            pos = aryRes[0]
+            viewWord = aryRes[6]
             if pos == '動詞':
                 print(viewWord)
         res = res.next
