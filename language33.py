@@ -21,8 +21,8 @@ for line in open('neko.txt', 'r'):
         #単語を取得
         word = res.surface
         #品詞を取得
-        pos = res.feature.split(",")[1]
-        pos2 = res.feature.split(",")[2]
+        pos = res.feature.split(",")[0]
+        pos2 = res.feature.split(",")[1]
         if pos == '名詞' and pos2 == 'サ変接続':
             print(word)
         res = res.next
