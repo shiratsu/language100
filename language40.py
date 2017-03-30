@@ -9,7 +9,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.font_manager
 from matplotlib.font_manager import FontProperties
-import Cabocha
+import CaboCha
 
 class Morph:
     surface = ''
@@ -20,26 +20,28 @@ class Morph:
     def __init__(self,line):
         cp = CaboCha.Parser('-f1')
         tree = cp.parse(line)
-        chunk_dic = {}
-        chunk_id = 0
-        for i in range(0, tree.size()):
-            token = tree.token(i)
-            if token.chunk:
-                chunk_dic[chunk_id] = token.chunk
-                chunk_id += 1
-
-        tuples = []
-        for chunk_id, chunk in chunk_dic.items():
-            if chunk.link > 0:
-                get_word(tree, chunk)
-
-
-    def get_word(tree, chunk):
-        surface = ''
-        for i in range(chunk.token_pos, chunk.token_pos + chunk.token_size):
-            token = tree.token(i)
-            features = token.feature.split(',')
-            print(features)
+        print(line)
+        print(tree.toString(CaboCha.FORMAT_TREE))
+    #     chunk_dic = {}
+    #     chunk_id = 0
+    #     for i in range(0, tree.size()):
+    #         token = tree.token(i)
+    #         if token.chunk:
+    #             chunk_dic[chunk_id] = token.chunk
+    #             chunk_id += 1
+    #
+    #     tuples = []
+    #     for chunk_id, chunk in chunk_dic.items():
+    #         if chunk.link > 0:
+    #             self.get_word(tree, chunk)
+    #
+    #
+    # def get_word(self,tree, chunk):
+    #     surface = ''
+    #     for i in range(chunk.token_pos, chunk.token_pos + chunk.token_size):
+    #         token = tree.token(i)
+    #         features = token.feature.split(',')
+    #         print(features)
 
 if __name__ == '__main__' :
 
